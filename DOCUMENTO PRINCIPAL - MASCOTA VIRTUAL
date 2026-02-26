@@ -1,2 +1,8 @@
-Mascota virtual
-Requerimientos:
+--------------------------------------------------| Mascota virtual |--------------------------------------------------
+-------------Definición del Proyecto:
+Una app que permite criar al usuario una mascota virtual(al estilo tamagotchi), creando un vínculo entre
+la mascota y la persona tras la pantalla.
+Existen muchas aplicaciones con la misma dinámica, lo innovador viene con la implementación de la IA para interactuar con 
+el personaje, con respecto a las preguntas que vayas generando y a la relacion que se vaya formando, la IA aprendera de
+esto y generará mejores respuestas.
+-------------Requerimientos:
