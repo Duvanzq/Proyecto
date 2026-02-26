@@ -6,3 +6,98 @@ Existen muchas aplicaciones con la misma dinámica, lo innovador viene con la im
 el personaje, con respecto a las preguntas que vayas generando y a la relacion que se vaya formando, la IA aprendera de
 esto y generará mejores respuestas.
 -------------Requerimientos:
+Introducción
+Este documento describe los requerimientos básicos para desarrollar una mascota virtual interactiva que utiliza inteligencia artificial (IA) para responder preguntas y mantener conversaciones. El proyecto se basa en Python y se inspira en aplicaciones como "My Talking Tom", donde la mascota no solo requiere cuidados (como alimentación y atención para mantener niveles de "hambre" o "felicidad"), sino que también permite personalización (ej. cambiar apariencias o accesorios) y la integración de minijuegos simples (ej. puzzles o juegos de memoria para interactuar con la mascota).
+El enfoque inicial es en PC, ya que es más sencillo para desarrollo y pruebas. Sin embargo, se incluyen opciones para hacer la aplicación multiplataforma (PC, móviles Android/iOS), utilizando frameworks cross-platform como Kivy, que permiten compilar el mismo código para diferentes dispositivos sin cambios mayores.
+La mascota usará la API de OpenAI para respuestas inteligentes, con interacciones personalizadas para que parezca "viva". Se agregará un chat de comandos por texto y una función de escucha (reconocimiento de voz) para charlar con la mascota. Respecto a los costos de la IA, se considera la integración de medios de pago (ej. suscripciones o micropagos) para cubrir el uso de la API, aunque esto se marca como una feature avanzada.
+1. Requerimientos de Software y Herramientas
+
+Lenguaje de Programación: Python 3.x como base principal.
+API de IA: OpenAI API (ej. GPT-3.5 o GPT-4) para procesar preguntas y respuestas. Requiere una clave API (API key) del usuario.
+Librerías Principales:
+Para IA: openai para integración con la API.
+Para Interfaz Gráfica y Modelos:
+kivy como framework principal para GUIs cross-platform. Soporta 2D nativamente (imágenes, animaciones simples) y puede integrar 3D con extensiones como kivy3 o pyglet para modelos más complejos. Para un inicio simple, enfócate en 2D (sprites o imágenes animadas de la mascota). Si se necesita 3D (ej. mascota rotativa), agregar panda3d como librería opcional.
+Alternativas: pygame para 2D en PC (fácil para animaciones y minijuegos), pero no es cross-platform nativo; usa Kivy para compatibilidad con móviles.
+
+Para Voz y Escucha: speech_recognition (para reconocimiento de voz vía micrófono) y pyttsx3 o gTTS (para síntesis de voz, haciendo que la mascota "hable").
+Para Pagos: stripe o paypal-sdk para integrar medios de pago (ej. suscripciones mensuales o créditos por interacciones IA). Esto cubre costos reales de la API (OpenAI cobra por tokens usados). Implementar como feature opcional: limitar interacciones gratuitas y requerir pago para más.
+Otras: json para guardar estados (ej. niveles de felicidad), requests para llamadas API externas si se necesita.
+
+Entorno de Desarrollo:
+IDE: VS Code o PyCharm.
+Control de Versiones: Git.
+Para Multiplataforma: Usa Buildozer (con Kivy) para compilar a APK (Android) o Xcode para iOS. Esto permite que el mismo código funcione en PC (ejecutable con Python) y móviles.
+
+Otras Herramientas: Blender o GIMP para diseñar assets gráficos (imágenes 2D/3D de la mascota). No dependas de librerías externas para diseño; el usuario puede crearlos manualmente.
+
+2. Requerimientos de Hardware
+
+Básicos para PC:
+Procesador: Intel Core i3 o equivalente.
+RAM: Mínimo 4GB (8GB recomendado para pruebas con voz/animaciones).
+Almacenamiento: 500MB libres para el proyecto y assets.
+
+Para Móviles (si se expande): Dispositivos con Android 5.0+ o iOS 12+, con al menos 2GB RAM. Requiere micrófono y altavoces para funciones de voz.
+Opcionales:
+Micrófono y altavoces para reconocimiento y síntesis de voz.
+GPU básica para renderizado 3D si se usa (no esencial para 2D).
+
+Notas: En PC, todo corre localmente excepto llamadas a OpenAI (nube). Para móviles, asegúrate de que la app maneje conexiones a internet para la IA.
+
+3. Requerimientos Funcionales
+
+Interfaz de Usuario:
+Ventana principal con la mascota visible (2D por defecto: imagen animada que reacciona a interacciones, ej. mueve la cola al hablar). Opcional: Soporte para 3D si se integra Panda3D.
+Personalización: Menú para cambiar apariencias (ej. colores, accesorios), inspirado en My Talking Tom.
+Minijuegos: Integrar 2-3 simples (ej. un puzzle para "alimentar" la mascota o un juego de memoria para aumentar felicidad), usando Pygame o Kivy widgets.
+
+Interacción con IA:
+La mascota responde preguntas enviadas a OpenAI, con prompts personalizados (ej. "Responde como una mascota juguetona: [pregunta]").
+Chat de Comandos: Campo de texto para ingresar comandos o preguntas (ej. "/alimentar" para subir nivel de hambre).
+Función de Escucha: Botón para activar micrófono; reconoce voz, envía a IA y responde en texto/voz.
+
+Comportamientos de Mascota:
+Niveles dinámicos: Hambre, felicidad, energía (bajan con tiempo; suben con interacciones/minijuegos).
+Cuidado: Similar a My Talking Tom, notificaciones para "cuidar" (ej. si hambre baja, la mascota se ve triste).
+Guardado de Estado: Usar JSON para persistir datos entre sesiones.
+
+Integración de Pagos:
+Límite gratuito: Ej. 10 interacciones IA por día.
+Pagos: Usar Stripe para comprar "créditos" (cada interacción IA cuesta tokens reales; mapear a pagos). Mostrar saldo y opción de compra en la app.
+
+Multiplataforma:
+Usar Kivy para que el código base sea compatible: Ejecuta directamente en PC (python app.py), compila a app móvil con Buildozer.
+
+Manejo de Errores:
+Si API falla o créditos bajos, la mascota dice "¡Estoy descansando! Recarga créditos o intenta después."
+
+
+4. Requerimientos No Funcionales
+
+Seguridad:
+Almacenar API key y datos de pago en variables de entorno (.env). No exponer en código.
+Cumplir con GDPR/privacidad para datos de usuario (ej. no guardar conversaciones sin consentimiento).
+
+Usabilidad:
+Interfaz intuitiva, con tutorial inicial. Soporte para touch en móviles (Kivy lo maneja).
+Rendimiento: Animaciones fluidas (60 FPS en 2D), respuestas IA en <5 segundos.
+
+Escalabilidad:
+Empezar con PC; expandir a móviles probando en emuladores (ej. Android Studio).
+Costos: Monitorear uso de OpenAI; integrar pagos para sostenibilidad.
+
+Accesibilidad:
+Soporte para texto alternativo en imágenes/animaciones. Opciones de voz para usuarios con discapacidades visuales.
+
+Pruebas:
+Unitarias para IA y voz; pruebas cross-device para multiplataforma.
+
+
+Pasos para Implementación
+
+Configurar entorno: Instala Python, Kivy, openai, speech_recognition, pyttsx3 (pip install kivy openai speechrecognition pyttsx3 stripe).
+Desarrollar base: Crea la interfaz con Kivy, integra IA simple.
+Agregar features: Personalización, minijuegos, voz, pagos.
+Probar en PC; luego compilar para móviles.
+Iterar: Basado en pruebas, ajustar para 3D si se desea.
