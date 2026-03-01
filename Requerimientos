@@ -1,0 +1,7 @@
+Requerimientos
+Lenguajes
+  Python
+  Html
+Librerias
+  flask
+  fastapi uvicorn requests pydantic python-dotenv
