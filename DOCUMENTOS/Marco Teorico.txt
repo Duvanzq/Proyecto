@@ -1,0 +1,42 @@
+Marco Teórico 
+Mascota Virtual 
+“Una mascota virtual, también conocida como mascota digital, es un tipo de compañero para humanos, de carácter artificial. Su uso principal es el de compañía y entretenimiento, sustituyendo en algunos casos a las mascotas reales.” (Extraído de (Wikipedia contributors, s/f)). 
+En comparación con las mascotas robóticas físicas no poseen una forma física quitando el hardware donde se ejecuta. 
+Estas mascotas virtuales pueden usarse con un objetivo o no, el jugador o usuario tendría que mantenerla viva tanto como se pueda y ayudarlos en su crecimiento (dependiendo de la mascota). Si no se tiene un objetivo, el usuario puede conocer el carácter de la mascota y construir una relación con ella.  
+Estas mascotas normalmente usan interacciones realistas o efectos visuales extravagantes para conseguir que la mascota parezca viva y no sea un simple programa. 
+Tamagotchi, pou y talking tom son algunos de los ejemplos mas populares de mascotas virtuales durante el tiempo. 
+
+Evolución De Las Mascotas Virtuales 
+
+Primera Generación: Tamagotchi 
+El tamagotchi fue lanzado en 1996 por BANDAI, consistia en un dispositivo pequeño con forma de huevo que se podía meter en el bolsillo o usarse como llavero, el  objetivo era cuidar de una criatura virtual, alimentándola, limpiándola y jugando con ella para evitar que muriese. 
+Fue creado por Aki Maita en Japón, su nombre se debe a la combinación de "tamago" que significa huevo y "watch" que significa reloj. Su impacto fue bastante considerable, vendiendo mas de 100 millones de unidades hasta el año 2025. 
+Segunda Generacion: Mascotas en pc y consolas 
+Un ejemplo de esta generación es Nintendogs, fue lanzado por la empresa Nintendo en 2005 para la consola portátil Nintendo DS. El juego hacia que los jugadores adoptaran, entrenaran, cuidaran y jugaran con cachorros virtuales dándoles uso a la pantalla táctil y el micrófono de la consola. Creado por Shigeru Miyamoto, fue un fenómeno mundial, volviéndose uno de los juegos mas vendidos de la consola portatil Nintendo DS. 
+Tercera Generacion: Mascotas Moviles 
+Con el nacimiento de los celulares inteligentes era cuestión de tiempo para que aparecieran mascotas virtuales para dichos dispositivos.  
+Una de estas mascotas fue la popular aplicación "Talking tom", estaba centrada en un gato a dos patas que interactuaba con el jugador de diversas maneras, como la detección de voz la cual hacía que el gato repitiera lo que se le dijera con una voz aguda y cómica. Fue creado por la empresa Outfit7 Limit en 2009, ha sido una las mascotas virtuales más populares de la historia. 
+
+Asistentes Virtuales 
+“Un asistente virtual (VA) es un programa tecnológico diseñado para ayudarte con diversas tareas específicas. Estos asistentes se utilizan tanto en entornos profesionales como en contextos personales. Un VA puede encargarse de organizar reuniones, programar citas, reservar vuelos, realizar investigaciones y hasta gestionar compras de alimentos o suministros. Por lo general, están integrados en sistemas informáticos, lo que permite un acceso más cómodo y eficiente.” (¿Qué es un asistente virtual?, s/f). 
+Evolución De Los Asistentes Virtuales 
+Primera Etapa: Sistemas Basados En Reglas (1960-2000) 
+ELIZA fue el primer chatbot, creado por Joseph Weizenbaum en 1966. Simulaba una psicoterapeuta rogeriana mediante análisis de palabras clave y frases predefinidas. Tenia la capacidad de generar empatía, lo cual logro engañar a muchos usuarios, esto demostró el "efecto ELIZA", se trata de que las personas asumen un comportamiento informático como humano. 
+
+Segunda Etapa: Asistentes En Dispositivos Y Web (2000-2010) 
+Un ejemplo de esta etapa fue "Clippy", era un asistente virtual animado con forma de clip, estaba integrado por Microsoft en Office 97 hasta los 2000.  
+Estaba hecho para dar soporte a usuarios nuevos, se le conocía por aparecer con consejos no solicitados, lo que lo volvió un icono amado y odiado. 
+
+Tercera Etapa: Asistentes por voz (2011) 
+El ejemplo más conocido sería el programa de "Siri". Funciona como un asistente virtual en los dispositivos de Apple, utiliza el reconocimiento de voz, procesamiento de lenguaje natural y aprendizaje automático para convertir comandos hablados en acciones. 
+Se activa con el comando de voz "Oye Siri", con botones físicos o con en audífonos de AirPods. Siri permite controlar apps, enviar mensajes, buscar información y gestionar dispositivos. 
+
+Videojuego Al  Que Se Aplica: Minecraft 
+El videojuego con el que se entrenará a la mascota/asistente virtual será "Minecraft", un videojuego estilo sandbox (libertad creativa). Fue lanzado el 17 de mayo de 2009 en su versión "Classic", posteriormente el 18 de noviembre de 2011 se lanzaría la versión completa por Markus Persson conocido mayormente como "Notch". 
+Desde su lanzamiento se ha ido actualizando, añadiendo más contenido en cada ￼versión. Este juego se convertiría hasta el día de hoy en el videojuego más vendido de la historia con más de 300 millones de copias. 
+
+Interacción Humano-Computador 
+
+La Interacción Humano-Computador es la disciplina que estudia cómo las personas se relacionan con los sistemas digitales, buscando que esta relación sea clara, eficiente y fácil de usar. Se basa en principios como la usabilidad, el diseño centrado en el usuario y la retroalimentación inmediata. 
+En los videojuegos, la HCI es fundamental porque el jugador interactúa constantemente con el sistema mediante controles e interfaces. En juegos sandbox como Minecraft, donde existe libertad de acción, una buena interacción mejora la experiencia y facilita el aprendizaje. 
+Aplicado a una mascota virtual asistente, este enfoque permite diseñar un sistema que apoye al jugador en tiempo real, ofreciendo recomendaciones, alertas o explicaciones según la situación dentro del juego. Así, se reduce la frustración y se mejora la experiencia general.
